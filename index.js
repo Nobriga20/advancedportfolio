@@ -8,13 +8,13 @@ const scalefactor = 1/20
 
 function moveBackGround(event) {
     const shapes = document.querySelectorAll(".shape")
-    const x=event.clientx * scalefactor;
-    const y=event.clienty * scalefactor;
+    const x=event.clientX * scalefactor;
+    const y=event.clientY * scalefactor;
     
     for (let i=0; i < shapes.length; ++i) {
         const isodd = i % 2 !== 0
         const boolInt = isodd ? -1 : 1;
-        shapes[i].style.transform = 'translate(${x * boolInt}px, ${y * boolInt}px)'
+        shapes[i].style.transform = shapes[i].style.transform = `translate(${x * boolInt}px,${ y * boolInt }px)`;
     }
 }
 
