@@ -21,10 +21,10 @@ function moveBackGround(event) {
 function toggleContrast() {
     contrastToggle =!contrastToggle
   if (contrastToggle) {
-    document.body.classlist += " dark-theme"
+    document.body.classList += " dark-theme"
 }
 else {
-    document.body.ClassList.remove("dark-theme")
+    document.body.classList.remove("dark-theme")
 }
 }
 
@@ -52,11 +52,11 @@ function contact(event) {
 
 
 function toggleModal () {
-    if (ismodalOpen) {
+    if (isModalOpen) {
         isModalOpen = false
-        return document.body.classlist.remove("modal--open")
+        return document.body.classList.remove("modal--open")
         
     }
     isModalOpen = true;
-    document.body.classlist += " modal--open"
+    document.body.classList += " modal--open"
 }
